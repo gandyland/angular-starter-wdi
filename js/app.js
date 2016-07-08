@@ -54,3 +54,18 @@ var superheroList = [
     img: "img/supergirl.jpg"
   }
 ]
+
+"use strict";
+
+(function(){
+angular
+.module("superhero", [])
+.controller("SuperheroController", SuperheroController)
+
+function SuperheroController(){
+  var vm = this;
+  vm.data = superheroList;
+  vm.hello = "Hello, world!";
+}
+
+})();
